@@ -11,7 +11,7 @@
         <i class="bi bi-chevron-right" />
       </a>
     </div>
-    <div class="d-flex align-items-center overflow-hidden">
+    <div class="px-1 d-flex align-items-center overflow-hidden">
       <button
         type="button"
         class="btn btn-danger">
