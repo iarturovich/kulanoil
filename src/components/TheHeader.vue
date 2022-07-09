@@ -131,6 +131,7 @@ export default {
   components: {
     TheCategories
   },
+  emits: ['toogleBackdrop'],
   data: () => ({
     links: ['О нас', 'Бренды', 'Подбор', 'Новости', 'Акции', 'Контакты', 'Помощь', 'Sale%'],
     balance: 38420,

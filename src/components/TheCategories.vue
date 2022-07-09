@@ -27,9 +27,9 @@
         :category="category" />
     </div>
     <div class="ms-4 d-flex flex-column gap-3">
-      <img src="@/assets/img/banner 1.png">
-      <img src="@/assets/img/banner 2.png">
-      <img src="@/assets/img/banner 3.png">
+      <img src="@/assets/img/banner1.png">
+      <img src="@/assets/img/banner2.png">
+      <img src="@/assets/img/banner3.png">
     </div>
   </div>
 </template>

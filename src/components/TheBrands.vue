@@ -28,7 +28,7 @@
             brand.class
           ]"
           @click="changeCurrentBrand(brand)">
-          <img :src="`src/assets/img/${brand.img}.png`">
+          <img :src="getImage(brand.img)">
           <span
             :class="{'text-blue': currentBrand === brand}"
             class="fw-bold text-center text-uppercase">
@@ -49,7 +49,7 @@
 export default {
   data: () => ({
     brands: [
-      { name: 'ad battery', img: 'ad battery' },
+      { name: 'ad battery', img: 'adbattery' },
       { name: 'mobil', img: 'mobil', class: 'px-3' },
       { name: 'mann-filter', img: 'mann filter', class: 'px-3' },
       { name: '555', img: '555' },
@@ -64,6 +64,9 @@ export default {
   methods: {
     changeCurrentBrand (brand) {
       this.currentBrand = brand
+    },
+    getImage (imgName) {
+      return new URL(`/src/assets/img/${imgName}.png`, import.meta.url).href
     }
   }
 }
